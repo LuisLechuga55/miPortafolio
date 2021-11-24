@@ -1,0 +1,18 @@
+- Una vez instalado git, hay que configurar la cuenta de github en la terminal.
+git config --global user.name "Your name here"
+git config --global user.email "your_email@example.com"
+
+- Para clonar un repositorio, usamos:
+git clone https://direccionDeTuRepo.git
+
+- Para hacer "push" de los cambios del repo clonado.
+git add -> "empaqueto mis cambios".
+ ejemplos: git add carpeta/
+            git add archivo.txt
+            git add .  -> añade todo
+git commit -m "-> etiquetar con indicaciones o comentarios"
+
+git push origin nombreDeLaRamaPrincipal
+NOTA: No olvides tener configurada tu cuenta de github y colocar el token de autencticación vigente.
+
+git status -> para verificar el estado de nuestros cambios.
