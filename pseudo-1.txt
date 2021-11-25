@@ -1,0 +1,96 @@
+//Programa que compare si un numero es mayor que otro
+
+INICIO
+    
+    ESCRIBIR "Por favor, ingrese un numero entero";
+    LEER num1;
+    ESCRIBIR "Por favor, ingrese otro numero entero";
+    LEER num2;
+    
+    PROCESO compararNumeros
+    
+        SI (a > b) entonces
+            ESCRIBIR "'a' es mayor que 'b'";
+        SI no, entonces{
+            ESCRIBIR "'b' es mayor que 'a' 
+        FINSI
+    
+    FINPROCESO
+FIN
+
+
+INICIO
+    
+    DEFINIR constante a = 3
+    DEFINIR constante b = 4
+
+    PROCESO numeroMayor
+        SI a > b entonces:
+            Imprimir 'El numero mayor es a';
+        SI NO, ENTONCES 
+            Imprimir 'El numero mayor es b';
+        finComparacion
+FIN
+
+INICIO
+    
+    DEFINIR dato1 = 3;
+    DEFINIR dato2 = 4;
+
+    PROCESO numeroMayor
+
+        Si dato1 > dato2 Entonces
+            Escribir 'El número mayor es Dato 1';
+        SI NO|
+            Escribir 'El número mayor es dato 2';
+        FINSI
+
+    FinProceso
+FIN
+
+//CREAR EL ALGORITMO QUE MULTIPLIQUE DOS NUMERO, SIN USAR EL SIMBOLO DE *
+
+INICIO
+    
+    PROCESO operacion(parametro a, parametro b) {
+
+    DEFINIR resultado = 0;
+    
+    BUCLE (DEFINIR index = 1; index Menor igual que b; index INCREMENTARA) {
+        DEFINIR resultado = valor de cero;
+        DEFINIR resultado sumara el valor definido en el parametro a;
+    }
+    
+    RETORNAR el valor de resultado
+    }
+    
+    FINPROCESO
+    
+    IMPRIMIR operacion(a, b)
+
+FIN
+
+INICIO
+    PROCESO mult (a, b)
+        DEFINIR resultado = 0      
+            PROCESOFOR index = 1; index <= b; index++, ENTONCES
+                DEFINIR resultado += a;
+            FINDELFOR
+        RETURN resultado
+    FINDELPROCESO
+
+    IMPRIMIR mult(a,b)
+FIN
+
+INICIO
+    
+    FUNCION multiplicacionNumeros(a,b)
+        DEFINIR resultado = 0;
+        PROCESOFOR (let index = 1; index <= b; index++) ENTONCES
+            PROCESO resultado += a
+        FINPROCESOFOR
+            RETURN resultado
+    FINFUNCION
+    IMPRIMIR multiplicacionNumeros(7, 8)
+    
+FIN
