@@ -1,0 +1,29 @@
+INICIO
+    DECLARAR resultado
+    CICLO FOR (index = 1, index = 16, index++)
+        SI residuo (index % 3) === 0 Y residuo (index % 5) === 0, ENTONCES
+            resultado = "FizzBuzz"
+        SI NO, ENTONCES
+            SI (index % 3) === 0, ENTONCES
+                resultado = "Fizz"
+            FIN SINO
+            SI residuo (index % 5) === 0, ENTONCES
+                resultado = "Buzz"
+            FIN-SINO
+            resultado = index
+        FIN-SI
+        IMPRIMIR resultado
+    FIN-CICLO 
+FIN
+
+INICIO
+    FUNCIONDIVISION
+        DEFINIR numeros = [1-16]
+        INICIARFOR (let index = 1; index < 17; index++)
+            INICIARIF
+                INICIARIF ( numero % 5 === 0 && numero % 3 === 0) IMPRIMIR FizzBuzz 
+                SI NO ( numero % 5 === 0) Entonces IMPRIMIR Buzz 
+                SI NO ( numero % 3 === 0) Entonces IMPRIMIR Fizz
+        FINFOR
+    FINFUNCION
+FIN
